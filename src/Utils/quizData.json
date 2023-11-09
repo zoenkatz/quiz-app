@@ -1,0 +1,26 @@
+[{
+  "question": "How many hearts does an octopus have?",
+  "options": ["1", "2", "3", "4"],
+  "answer": "3",
+  "chosenAnswer": ""
+}, {
+  "question": "What planet is closest to the sun?",
+  "options": ["Mercury", "Neptune", "Jupiter", "Noga"],
+  "answer": "Mercury",
+  "chosenAnswer": ""
+}, {
+  "question": "Where is the strongest human muscle located?",
+  "options": ["Leg", "Harm", "Eye", "Jaw"],
+  "answer": "Jaw",
+  "chosenAnswer": ""
+}, {
+  "question": "How many dots appear on a pair of dice?",
+  "options": ["36", "40", "42", "56"],
+  "answer": "42",
+  "chosenAnswer": ""
+}, {
+  "question": "What is acrophobia a fear of?",
+  "options": ["Elevators", "Water", "Heights", "Lights"],
+  "answer": "Heights",
+  "chosenAnswer": ""
+}]

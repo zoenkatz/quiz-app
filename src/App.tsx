@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useMemo} from 'react';
+import questions from "./Utils/quizData.json";
+import './App.scss';
+import Question from "./Screens/Question/Question";
+import Score from "./Screens/Score/Score";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [quizQuestions, setQuizQuestions] = useState(questions)
+    const [isScorePage, setIsScorePage] = useState(false)
+
+    return (
+        <div className="quiz-app">
+                <h2>Quiz</h2>
+                <div className="quiz-app-data">
+                {isScorePage ? <Score quizQuestions={quizQuestions}/> :
+                    <Question quizQuestions={quizQuestions} setIsScorePage={setIsScorePage}
+                              setQuizQuestions={setQuizQuestions}/>}
+                </div>
+        </div>
+    );
 }
 
 export default App;
